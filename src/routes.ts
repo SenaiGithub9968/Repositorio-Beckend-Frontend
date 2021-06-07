@@ -5,7 +5,6 @@ import {CourseUnitController } from './controler/CourseUnitControler';
 import { AuthenticateController } from './controler/AuthenticateController';
 import autenticated from './middleware/Autenticated';
 
-
 const userController = new UserController()
 const activyController = new ActivyController()
 const courseUnitController = new CourseUnitController()

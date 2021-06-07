@@ -1,6 +1,7 @@
 import {getRepository} from 'typeorm';
 import {Activy} from '../models/Activy';
 
+
 interface userId {
     id?: string;
 }
