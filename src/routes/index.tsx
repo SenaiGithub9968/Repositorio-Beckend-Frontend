@@ -5,6 +5,7 @@ import {Register} from '../pages/register';
 import {Login} from '../pages/login';
 import {NotFound} from '../pages/NotFound';
 
+
 const Routes: React.FC = () => (
     <Switch>
         <Route path="/" exact component={Login}/>
