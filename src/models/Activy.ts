@@ -2,7 +2,6 @@ import {Column, CreateDateColumn, Entity, JoinTable, ManyToOne, PrimaryColumn} f
 import {v4 as uuid} from 'uuid';
 import {CourseUnit} from './CourseUnit';
 
-
 @Entity("activies")
 class Activy {
 

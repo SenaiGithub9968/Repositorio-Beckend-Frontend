@@ -4,7 +4,6 @@ import {compare} from 'bcryptjs';
 import authConfig from '../config/auth';
 import {User} from '../models/User';
 
-
 interface AuthData {
     email: string;
     password: string;
