@@ -7,7 +7,7 @@ interface Token {
     role: string;
 }
 
-export default function autenticated(request:Request, response:Response, next:NextFunction){
+export default function autenticated(request:Request, response:Response, next:NextFunction){    
 
     const headerAutorization = request.headers.authorization
 
@@ -19,18 +19,18 @@ export default function autenticated(request:Request, response:Response, next:Ne
 
     const [, token] = headerAutorization.split(' ');
 
-    const verifyToken = verify(token, authConfig.jwt.secret);
+    const verifyToken = verify(token, authConfig.jwt.publicKey);
 
-        if(!verifyToken){
-            throw new Error()
-        }
+    if(!verifyToken){
+        throw new Error("");
+    }
 
-    const {sub,role} = verifyToken as Token
+    const {sub,role} = verifyToken as Token;
 
-        request.body.user = {
-            id: sub,
-            role: role
-        }
+    request.body.user = {
+        id: sub,
+        role: role
+    }
 
     return next();
 }

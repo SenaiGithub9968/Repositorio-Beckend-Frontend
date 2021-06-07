@@ -12,12 +12,15 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cjs": "^0.0.11",
     "cli.js": "^1.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "js": "^0.1.0",
     "jsonwebtoken": "^8.5.1",
+    "mout": "^2.0.0-alpha.1",
+    "nyks": "^6.2.0",
+    "openssl": "^1.1.0",
     "pg": "^8.6.0",
     "typeorm": "^0.2.32",
     "uuid": "^8.3.2"
@@ -29,6 +32,7 @@
     "@types/jsonwebtoken": "^8.5.1",
     "@types/node": "^15.0.1",
     "@types/uuid": "^8.3.0",
+    "dotenv": "^10.0.0",
     "ts-node": "^9.1.1",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.4"

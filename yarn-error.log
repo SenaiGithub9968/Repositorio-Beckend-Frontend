@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @type/dotenv -D
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add OpenSSL
 
 PATH: 
   C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\giit2\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\oriz\AppData\Local\Microsoft\WindowsApps;C:\Users\oriz\AppData\Roaming\npm;C:\Users\oriz\AppData\Local\Yarn\bin;C:\Users\oriz\AppData\Local\GitHubDesktop\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@type%2fdotenv: Not found
+  Error: https://registry.yarnpkg.com/OpenSSL: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
       at Request.emit (events.js:315:20)
@@ -41,12 +41,14 @@ npm manifest:
     },
     "dependencies": {
       "bcryptjs": "^2.4.3",
+      "cjs": "^0.0.11",
       "cli.js": "^1.0.2",
       "cors": "^2.8.5",
       "dotenv": "^9.0.2",
       "express": "^4.17.1",
       "js": "^0.1.0",
       "jsonwebtoken": "^8.5.1",
+      "openssl": "^1.1.0",
       "pg": "^8.6.0",
       "typeorm": "^0.2.32",
       "uuid": "^8.3.2"
@@ -244,6 +246,13 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
     integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
   
+  async@^2.0.0:
+    version "2.6.3"
+    resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
+    integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
+    dependencies:
+      lodash "^4.17.14"
+  
   balanced-match@^1.0.0:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -369,6 +378,13 @@ Lockfile:
       readdirp "~3.5.0"
     optionalDependencies:
       fsevents "~2.3.1"
+  
+  cjs@^0.0.11:
+    version "0.0.11"
+    resolved "https://registry.yarnpkg.com/cjs/-/cjs-0.0.11.tgz#1fe528ebda8f9ee21f81a7f7b299a8d70b14a47c"
+    integrity sha1-H+Uo69qPnuIfgaf3spmo1wsUpHw=
+    dependencies:
+      sync-channel "*"
   
   cli-highlight@^2.1.10:
     version "2.1.11"
@@ -945,7 +961,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
     integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
   
-  lodash@^4.13.1:
+  lodash@^4.13.1, lodash@^4.17.14:
     version "4.17.21"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
     integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -1033,6 +1049,16 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
     integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
   
+  mout@^0.11.1:
+    version "0.11.1"
+    resolved "https://registry.yarnpkg.com/mout/-/mout-0.11.1.tgz#ba3611df5f0e5b1ffbfd01166b8f02d1f5fa2b99"
+    integrity sha1-ujYR318OWx/7/QEWa48C0fX6K5k=
+  
+  mout@^1.0.0:
+    version "1.2.2"
+    resolved "https://registry.yarnpkg.com/mout/-/mout-1.2.2.tgz#c9b718a499806a0632cede178e80f436259e777d"
+    integrity sha512-w0OUxFEla6z3d7sVpMZGBCpQvYh8PHS1wZ6Wu9GNKHMpAHWJ0if0LsQZh3DlOqw55HlhJEOMLpFnwtxp99Y5GA==
+  
   ms@2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -1082,6 +1108,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
     integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
   
+  nyks@^2.9.0:
+    version "2.31.3"
+    resolved "https://registry.yarnpkg.com/nyks/-/nyks-2.31.3.tgz#3dafdbbbeb765519c40b23747e9198c39a1036ba"
+    integrity sha1-Pa/bu+t2VRnECyN0fpGYw5oQNro=
+    dependencies:
+      async "^2.0.0"
+      mout "^1.0.0"
+  
   object-assign@^4, object-assign@^4.0.1:
     version "4.1.1"
     resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -1100,6 +1134,14 @@ Lockfile:
     integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
     dependencies:
       wrappy "1"
+  
+  openssl@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/openssl/-/openssl-1.1.0.tgz#72f925577ed0c99531306f84d1153ca10bd3aefd"
+    integrity sha1-cvklV37QyZUxMG+E0RU8oQvTrv0=
+    dependencies:
+      mout "^0.11.1"
+      nyks "^2.9.0"
   
   packet-reader@1.0.0:
     version "1.0.0"
@@ -1571,6 +1613,11 @@ Lockfile:
     integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
     dependencies:
       has-flag "^4.0.0"
+  
+  sync-channel@*:
+    version "0.0.6"
+    resolved "https://registry.yarnpkg.com/sync-channel/-/sync-channel-0.0.6.tgz#0bad830d8f1f11b8ce612549e0d9637bb0652850"
+    integrity sha1-C62DDY8fEbjOYSVJ4Nlje7BlKFA=
   
   thenify-all@^1.0.0:
     version "1.6.0"
