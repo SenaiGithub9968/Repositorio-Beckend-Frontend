@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Button } from '../../components/button';
 import {Container, Content,FormContainer , InputContainer, Background} from './styles';
 
-
 export function Register(){
     return (
         <Container>
