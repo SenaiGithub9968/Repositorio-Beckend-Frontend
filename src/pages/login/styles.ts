@@ -3,7 +3,6 @@ import {shade} from 'polished';
 //import loginBackgroundImg from '../../assets/bg-shapes.svg';
 import path from 'path';
 
-
 const loginBackgroundImg = path.resolve("/static/media/bg-shapes.51dcc6b7.svg");
 
 export const Container = styled.div`
